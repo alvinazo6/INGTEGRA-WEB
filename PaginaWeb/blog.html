@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Ingtegra</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .blog-titulo { color: var(--color3); text-align: center; font-size: 2.1rem; margin: 2.5rem 0 1.2rem 0; letter-spacing: 2px; }
+    .blog-section { max-width: 900px; margin: 0 auto 3rem auto; }
+    .blog-list { display: flex; flex-direction: column; gap: 2.5rem; }
+    .blog-article { background: var(--color6); border-radius: 14px; box-shadow: 0 2px 12px rgba(44,44,44,0.10); padding: 2rem 1.5rem; display: flex; flex-direction: column; align-items: center; }
+    .blog-article img { width: 100%; max-width: 340px; border-radius: 10px; margin-bottom: 1.2rem; box-shadow: 0 2px 12px rgba(44,44,44,0.10); }
+    .blog-article-title { color: var(--color3); font-size: 1.4rem; margin-bottom: 0.7rem; text-align: center; }
+    .blog-article-extract { color: var(--color4); font-size: 1.08rem; margin-bottom: 1.2rem; text-align: center; }
+    .blog-article-link { background: var(--color4); color: #fff; padding: 0.5rem 1.2rem; border-radius: 6px; text-decoration: none; font-size: 1rem; transition: background 0.2s; }
+    .blog-article-link:hover { background: var(--color3); }
+    @media (max-width: 900px) {
+      .blog-article img { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Ingtegra" class="logo-img"></a>
+      </div>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="portafolio.html">PORTAFOLIO</a></li>
+        <li><a href="blog.html" class="active">BLOG</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 class="blog-titulo">BLOG INGTEGRA</h2>
+    <div class="blog-section">
+      <div class="blog-list">
+        <article class="blog-article">
+          <img src="img/blog1.jpg" alt="Artículo 1">
+          <div class="blog-article-title">Tendencias en diseño de muebles personalizados</div>
+          <div class="blog-article-extract">Descubre las últimas tendencias en diseño de muebles a medida y cómo la personalización puede transformar tus espacios.</div>
+          <a href="#" class="blog-article-link">Leer más</a>
+        </article>
+        <article class="blog-article">
+          <img src="img/blog2.jpg" alt="Artículo 2">
+          <div class="blog-article-title">Innovación en accesorios metálicos para el hogar</div>
+          <div class="blog-article-extract">Conoce los nuevos materiales y procesos que están revolucionando los accesorios metálicos en proyectos residenciales y comerciales.</div>
+          <a href="#" class="blog-article-link">Leer más</a>
+        </article>
+        <article class="blog-article">
+          <img src="img/blog3.jpg" alt="Artículo 3">
+          <div class="blog-article-title">Impresión 3D: aplicaciones prácticas en la industria</div>
+          <div class="blog-article-extract">Explora cómo la impresión 3D está cambiando la fabricación de piezas, prototipos y soluciones técnicas en diferentes sectores.</div>
+          <a href="#" class="blog-article-link">Leer más</a>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer style="background: var(--color4); color: #fff;">
+    <div class="contacto-footer" style="background: var(--color3); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem 0 1rem 0;">
+      <div class="social-links" style="margin-bottom: 0.5rem;">
+        <a href="#" target="_blank" title="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="TikTok"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="TikTok" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="WhatsApp"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+      </div>
+      <p style="margin: 0;">&copy; 2025 Ingtegra. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesorios 4x4 | Ingtegra</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .naranja { color: var(--color3); }
+    .negro { color: var(--color4); }
+    .accesorios-titulo { color: var(--color3); text-align: center; font-size: 2.1rem; margin: 2.5rem 0 1.2rem 0; letter-spacing: 2px; }
+    .accesorios-desc { text-align: center; font-size: 1.2rem; margin-bottom: 2.2rem; }
+    .accesorios-galeria { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-bottom: 3rem; }
+    .accesorio-card { background: var(--color6); border-radius: 12px; box-shadow: 0 2px 12px rgba(44,44,44,0.10); flex: 1 1 220px; max-width: 260px; min-width: 220px; padding: 1.2rem 1rem 1.5rem 1rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .accesorio-card img { width: 90%; max-width: 140px; border-radius: 10px; margin-top: 1.1rem; box-shadow: 0 2px 12px rgba(44,44,44,0.10); }
+    @media (max-width: 900px) {
+      .accesorios-galeria { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Ingtegra" class="logo-img"></a>
+      </div>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="portafolio.html">PORTAFOLIO</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section style="max-width: 950px; margin: 0 auto; padding: 2.5rem 0;">
+      <h2 class="accesorios-titulo" style="text-align:center;">ACCESORIOS OFF ROAD</h2>
+      <div class="accesorios-desc" style="text-align:center; font-size:1.25rem; margin-bottom:2.2rem; color:var(--color4);">
+        Descubre nuestra línea de accesorios 4x4 diseñados para la aventura y la resistencia.<br>
+        <span style="color:var(--color3); font-weight:600;">Personalizamos y fabricamos a medida para tu vehículo.</span>
+      </div>
+      <div class="accesorios-galeria" style="display:flex; flex-wrap:wrap; gap:2.5rem; justify-content:center; margin-bottom:3rem;">
+        <div class="accesorio-card" style="background:var(--color6); border-radius:14px; box-shadow:0 2px 12px rgba(44,44,44,0.10); padding:1.5rem 1rem; min-width:220px; max-width:260px; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <img src="img/4x4_1.jpg" alt="Parachoques reforzado" style="width:90%; max-width:140px; border-radius:10px; margin-bottom:1rem; box-shadow:0 2px 12px rgba(44,44,44,0.10);">
+          <div style="font-size:1.05rem; color:var(--color4);">Parachoques reforzado para máxima protección y estilo.</div>
+        </div>
+        <div class="accesorio-card" style="background:var(--color6); border-radius:14px; box-shadow:0 2px 12px rgba(44,44,44,0.10); padding:1.5rem 1rem; min-width:220px; max-width:260px; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <img src="img/4x4_2.jpg" alt="Barras antivuelco" style="width:90%; max-width:140px; border-radius:10px; margin-bottom:1rem; box-shadow:0 2px 12px rgba(44,44,44,0.10);">
+          <div style="font-size:1.05rem; color:var(--color4);">Barras antivuelco personalizadas para seguridad y diseño.</div>
+        </div>
+        <div class="accesorio-card" style="background:var(--color6); border-radius:14px; box-shadow:0 2px 12px rgba(44,44,44,0.10); padding:1.5rem 1rem; min-width:220px; max-width:260px; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <img src="img/4x4_3.jpg" alt="Portaequipaje metálico" style="width:90%; max-width:140px; border-radius:10px; margin-bottom:1rem; box-shadow:0 2px 12px rgba(44,44,44,0.10);">
+          <div style="font-size:1.05rem; color:var(--color4);">Portaequipaje metálico de alta resistencia para tus aventuras.</div>
+        </div>
+      </div>
+      <div style="background:var(--color1); border-radius:12px; box-shadow:0 2px 12px rgba(44,44,44,0.08); padding:2rem 1.5rem; text-align:center; margin-bottom:2.5rem;">
+        <h3 style="color:var(--color3); font-size:1.3rem; margin-bottom:0.7rem;">¿Por qué elegir nuestros accesorios?</h3>
+        <ul style="list-style:none; padding:0; margin:0; color:var(--color4); font-size:1.08rem;">
+          <li>✔️ Materiales resistentes y duraderos</li>
+          <li>✔️ Diseño personalizado para cada vehículo</li>
+          <li>✔️ Instalación profesional y asesoría experta</li>
+        </ul>
+      </div>
+      <div style="text-align:center; margin-bottom:2rem;">
+        <h3 style="color:var(--color2); font-size:1.15rem; margin-bottom:0.5rem;">Testimonios de clientes</h3>
+        <blockquote style="font-size:1.05rem; color:var(--color4); background:var(--color6); border-radius:8px; padding:1rem 1.5rem; margin:0 auto; max-width:500px;">“Los accesorios de Ingtegra mejoraron la seguridad y el look de mi camioneta. ¡Recomendados!”</blockquote>
+      </div>
+    </section>
+  </main>
+  <footer style="background: var(--color4); color: #fff;">
+    <div class="contacto-footer" style="background: var(--color3); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem 0 1rem 0;">
+      <div class="social-links" style="margin-bottom: 0.5rem;">
+        <a href="#" target="_blank" title="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="TikTok"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="TikTok" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="WhatsApp"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+      </div>
+      <p style="margin: 0;">&copy; 2025 Ingtegra. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
