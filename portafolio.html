@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Ingtegra</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .portfolio-titulo { color: var(--color3); text-align: center; font-size: 2.1rem; margin: 2.5rem 0 1.2rem 0; letter-spacing: 2px; }
+    .portfolio-section { max-width: 950px; margin: 0 auto 3rem auto; }
+    .portfolio-subtitulo { color: var(--color4); text-align: center; font-size: 1.3rem; margin-bottom: 2.2rem; }
+    .portfolio-categorias { display: flex; flex-direction: column; gap: 2.5rem; }
+    .portfolio-categoria { background: var(--color6); border-radius: 14px; box-shadow: 0 2px 12px rgba(44,44,44,0.10); padding: 2rem 1.5rem; }
+    .portfolio-categoria h3 { color: var(--color3); font-size: 1.4rem; margin-bottom: 1.2rem; text-align: center; }
+    .portfolio-items { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+    .portfolio-item { background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(44,44,44,0.10); padding: 1rem; max-width: 220px; text-align: center; }
+    .portfolio-item img { width: 100%; max-width: 180px; border-radius: 8px; margin-bottom: 0.7rem; }
+    .portfolio-item-desc { font-size: 1rem; color: var(--color4); margin-bottom: 0.5rem; }
+    @media (max-width: 900px) {
+      .portfolio-items { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Ingtegra" class="logo-img"></a>
+      </div>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="portafolio.html" class="active">PORTAFOLIO</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 class="portfolio-titulo">PORTAFOLIO DE PROYECTOS</h2>
+    <div class="portfolio-subtitulo">Conoce algunos de nuestros proyectos exitosos en muebles de melamina, accesorios metálicos e impresiones 3D.</div>
+    <div class="portfolio-section">
+      <div class="portfolio-categorias">
+        <!-- Muebles en Melamina -->
+        <div class="portfolio-categoria">
+          <h3>Muebles en Melamina</h3>
+          <div class="portfolio-items">
+            <div class="portfolio-item">
+              <img src="img/melamina1.jpg" alt="Closet personalizado">
+              <div class="portfolio-item-desc">Closet personalizado en melamina blanca, diseño moderno y funcional.</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/melamina2.jpg" alt="Centro de entretenimiento">
+              <div class="portfolio-item-desc">Centro de entretenimiento a medida, acabado premium.</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/melamina3.jpg" alt="Mueble de cocina">
+              <div class="portfolio-item-desc">Mueble de cocina con detalles metálicos y máxima durabilidad.</div>
+            </div>
+          </div>
+        </div>
+        <!-- Accesorios Metálicos -->
+        <div class="portfolio-categoria">
+          <h3>Accesorios Metálicos</h3>
+          <div class="portfolio-items">
+            <div class="portfolio-item">
+              <img src="img/metal1.jpg" alt="Bumper 4x4">
+              <div class="portfolio-item-desc">Bumper reforzado para vehículos 4x4, pintura electrostática.</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/metal2.jpg" alt="Base metálica">
+              <div class="portfolio-item-desc">Base para silla en acero inoxidable, alta resistencia.</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/metal3.jpg" alt="Estructura personalizada">
+              <div class="portfolio-item-desc">Estructura metálica a medida para proyectos especiales.</div>
+            </div>
+          </div>
+        </div>
+        <!-- Impresiones 3D -->
+        <div class="portfolio-categoria">
+          <h3>Impresiones 3D</h3>
+          <div class="portfolio-items">
+            <div class="portfolio-item">
+              <img src="img/3d1.jpg" alt="Pieza 3D personalizada">
+              <div class="portfolio-item-desc">Pieza personalizada impresa en 3D para prototipos y soluciones técnicas.</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/3d2.jpg" alt="Accesorio 3D">
+              <div class="portfolio-item-desc">Accesorio funcional impreso en 3D, alta precisión y calidad.</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/3d3.jpg" alt="Modelo 3D">
+              <div class="portfolio-item-desc">Modelo 3D para presentación de proyectos y maquetas.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer style="background: var(--color4); color: #fff;">
+    <div class="contacto-footer" style="background: var(--color3); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem 0 1rem 0;">
+      <div class="social-links" style="margin-bottom: 0.5rem;">
+        <a href="#" target="_blank" title="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="TikTok"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="TikTok" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        <a href="#" target="_blank" title="WhatsApp"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+      </div>
+      <p style="margin: 0;">&copy; 2025 Ingtegra. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

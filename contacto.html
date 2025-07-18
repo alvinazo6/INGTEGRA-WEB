@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Ingtegra</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Ingtegra" class="logo-img"></a>
+      </div>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="portafolio.html">PORTAFOLIO</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contacto.html" class="active">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contacto-section" style="background: var(--color4); padding: 0; margin: 0;">
+      <div class="contacto-bg" style="display: flex; flex-direction: row; min-height: 320px; max-width: 900px; margin: 2.5rem auto 0 auto; border-radius: 16px; overflow: hidden;">
+        <div class="contacto-info" style="flex:1; background: var(--color4); color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 2.5rem 2rem;">
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">CONTÁCTANOS</h2>
+          <p style="font-size: 1.2rem;">¿Tienes un proyecto o consulta? Completa el formulario y te responderemos a la brevedad.</p>
+        </div>
+        <form action="https://formsubmit.co/email.ejemplo@gmail.com" method="POST" class="contacto-form" style="flex:1; background: var(--color3); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2.5rem 2rem; border-radius: 0 16px 16px 0;">
+          <div style="width: 90%; max-width: 340px;">
+            <input type="hidden" name="_cc" value="email.ejemplo2@gmail.com">
+            <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+            <label for="nombre" style="color: var(--color4); font-weight: 500;">Nombre</label>
+            <div class="input-icon" style="margin-bottom: 0.9rem;">
+              <span>👤</span>
+              <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 1.1rem; border-radius: 8px; border: 1.5px solid var(--color5); font-size: 1.15rem;">
+            </div>
+            <label for="email" style="color: var(--color4); font-weight: 500;">Correo electrónico</label>
+            <div class="input-icon" style="margin-bottom: 0.9rem;">
+              <span>✉️</span>
+              <input type="email" id="email" name="email" required style="width: 100%; padding: 1.1rem; border-radius: 8px; border: 1.5px solid var(--color5); font-size: 1.15rem;">
+            </div>
+            <label for="mensaje" style="color: var(--color4); font-weight: 500;">¿Qué necesitas cotizar?</label>
+            <div class="input-icon" style="margin-bottom: 0.9rem;">
+              <span>📝</span>
+              <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 1.1rem; border-radius: 8px; border: 1.5px solid var(--color5); font-size: 1.15rem;"></textarea>
+            </div>
+            <button type="submit" class="cta-btn" style="width: 100%; margin-top: 1rem; font-size: 1.2rem; padding: 1.1rem 0; background: var(--color4); color: #fff; border: none; border-radius: 8px;">Enviar Cotización</button>
+          </div>
+        </form>
+      </div>
+      <div class="contacto-footer" style="background: var(--color3); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem 0 1rem 0;">
+        <div class="social-links" style="margin-bottom: 0.5rem;">
+          <a href="#" target="_blank" title="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+          <a href="#" target="_blank" title="TikTok"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="TikTok" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+          <a href="#" target="_blank" title="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+          <a href="#" target="_blank" title="WhatsApp"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" style="width: 28px; height: 28px; margin: 0 8px; filter: invert(1); opacity: 0.7;"></a>
+        </div>
+        <p style="margin: 0;">&copy; 2025 Ingtegra. Todos los derechos reservados.</p>
+      </div>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
